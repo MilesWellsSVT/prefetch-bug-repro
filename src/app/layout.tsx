@@ -20,7 +20,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 		<html lang="en">
 			<body className={inter.className}>
 				<ClientComponent>
-					<ServerComponentNavigation>{children}</ServerComponentNavigation>
+					<ServerComponentNavigation />
+
+					{children}
 				</ClientComponent>
 			</body>
 		</html>
